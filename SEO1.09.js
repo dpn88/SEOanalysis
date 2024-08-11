@@ -3,20 +3,29 @@ javascript:(function() {
     var d = w.document;
     d.write('<html><head><title>Full Page Analysis</title>');
     d.write('<style>');
-    // General Styles
-    d.write('body { font-family: "Helvetica Neue", Arial, sans-serif; background-color: #f4f4f4; color: #333; margin: 20px; }');
-    d.write('.container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }');
-    d.write('.container > div { padding: 20px; border: 1px solid #ddd; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }');
-    d.write('h1 { grid-column: 1 / -1; color: #003366; font-size: 28px; margin-bottom: 20px; }');
-    d.write('h2 { margin-top: 0; font-size: 22px; color: #004488; }');
+    
+    // General body and font styling
+    d.write('body { font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333; margin: 20px; }');
+    d.write('.container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }');
+    d.write('.container > div { padding: 20px; border: 1px solid #ddd; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }');
+    
+    // Header styles
+    d.write('h1 { grid-column: 1 / -1; color: #003366; font-size: 28px; margin-bottom: 20px; text-align: center; }');
+    d.write('h2 { margin-top: 0; font-size: 22px; color: #004488; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; }');
+    
+    // List and link styles
     d.write('ul { list-style-type: none; margin: 0; padding: 0; }');
     d.write('li { margin: 10px 0; }');
-    d.write('a { color: #0077CC; text-decoration: none; }');
+    d.write('a { color: #0077cc; text-decoration: none; font-weight: bold; }');
     d.write('a:hover { text-decoration: underline; }');
+    
+    // Dropdown button and content styling
     d.write('.dropdown { margin-bottom: 20px; }');
-    d.write('.dropdown-button { background-color: #0077CC; color: white; padding: 10px; border: none; cursor: pointer; width: 100%; text-align: left; font-size: 18px; border-radius: 4px; }');
-    d.write('.dropdown-content { display: none; padding: 10px 0; }');
+    d.write('.dropdown-button { background-color: #0077cc; color: white; padding: 12px; border: none; cursor: pointer; width: 100%; text-align: left; font-size: 18px; border-radius: 4px; transition: background-color 0.3s ease; }');
+    d.write('.dropdown-button:hover { background-color: #005fa3; }');
+    d.write('.dropdown-content { display: none; padding: 10px 0; margin-top: 10px; }');
     d.write('.dropdown-button.active + .dropdown-content { display: block; }');
+
     d.write('</style>');
     d.write('</head><body>');
     d.write('<h1>Full Page Analysis</h1>');
