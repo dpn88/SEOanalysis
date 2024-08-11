@@ -111,8 +111,8 @@ javascript:(function() {
     var focusKeyphraseCandidates = headingsText + ' ' + metaDescriptionContent + ' ' + titleText + ' ' + bodyText;
     var words = focusKeyphraseCandidates.toLowerCase().match(/\b\w+\b/g);
     
-    // Common stop words to ignore
-    var stopWords = ['the', 'and', 'a', 'an', 'in', 'on', 'at', 'of', 'for', 'to', 'is', 'with', 'by', 'this', 'that', 'it', 'as', 'be', 'are', 'was', 'were', 'will', 'would', 'can', 'could', 'has', 'have', 'had', 'from', 'or', 'but', 'not', 'so', 'if'];
+    // Common stop words and prepositions to ignore
+    var stopWords = ['the', 'and', 'a', 'an', 'in', 'on', 'at', 'of', 'for', 'to', 'is', 'with', 'by', 'this', 'that', 'it', 'as', 'be', 'are', 'was', 'were', 'will', 'would', 'can', 'could', 'has', 'have', 'had', 'from', 'or', 'but', 'not', 'so', 'if','you','your','yours','us','ours','our'];
     var wordFrequency = {};
     
     words.forEach(function(word) {
