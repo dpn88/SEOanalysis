@@ -1,5 +1,5 @@
 javascript:(function() {
-    var w = window.open();
+    var w = window.open('', 'PageAnalysis', 'width=800,height=600,scrollbars=yes,resizable=yes');
     var d = w.document;
     d.write('<html><head><title>Full Page Analysis</title>');
     d.write('<style>');
