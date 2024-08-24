@@ -13,7 +13,7 @@ javascript:(function() {
     d.write('a { color: #06f; text-decoration: none; }');
     d.write('a:hover { text-decoration: underline; }');
     d.write('.dropdown { margin-bottom: 15px; }');
-    d.write('.dropdown-button { background-color: #0066cc; color: white; padding: 10px; border: none; cursor: pointer; width: 100%; text-align: left; font-size: 16px; }');
+    d.write('.dropdown-button { background-color: #00ffa2; color: white; padding: 10px; border: none; cursor: pointer; width: 100%; text-align: left; font-size: 16px; }');
     d.write('.dropdown-content { display: none; padding: 10px 0; }');
     d.write('.dropdown-button.active + .dropdown-content { display: block; }');
     d.write('</style>');
